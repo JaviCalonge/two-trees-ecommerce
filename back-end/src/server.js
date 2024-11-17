@@ -165,8 +165,10 @@ async function startServer() {
     res.sendFile(path.join(distPath, "index.html"));
   });
 
+  const port = process.env.PORT || 8000;
+
   app.listen(8000, () => {
-    console.log("Listening in 8000");
+    console.log(`Listening in ${port}`);
   });
 }
 
