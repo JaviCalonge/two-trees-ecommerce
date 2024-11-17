@@ -163,9 +163,9 @@ async function startServer() {
     res.sendFile(path.join(distPath, "index.html"));
   });
 
-  // Importante: Usar el puerto que Render proporciona
   const port = process.env.PORT || 8000;
-  app.listen(port, "0.0.0.0", () => {
+
+  app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });
 }
