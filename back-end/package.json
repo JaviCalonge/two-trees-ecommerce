@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon --exec npx babel-node src/server.js",
     "build": "babel src -d dist",
-    "start": "node ./dist/server.js"
+    "start": "node ./src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -30,5 +30,5 @@
     "@babel/plugin-transform-runtime": "^7.19.6",
     "nodemon": "^2.0.20"
   }
-  
+
 } 
