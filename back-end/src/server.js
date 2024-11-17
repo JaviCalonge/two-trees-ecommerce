@@ -2,10 +2,8 @@ import express from "express";
 import { MongoClient } from "mongodb";
 import path from "path";
 import dotenv from "dotenv";
-import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = process.cwd();
 
 dotenv.config(); // Cargar variables de entorno desde .env
 
@@ -21,7 +19,7 @@ async function startServer() {
   app.use("/images", express.static(path.join(__dirname, "../assets")));
 
   // Configuración para servir la carpeta dist del front-end
-  const distPath = path.join(__dirname, "../dist");
+  const distPath = path.join(__dirname, "dist");
 
   app.use(express.static(distPath, { maxAge: "1y", etag: false }));
 
