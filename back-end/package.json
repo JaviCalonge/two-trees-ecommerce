@@ -2,7 +2,6 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +26,10 @@
     "@babel/node": "^7.20.7",
     "@babel/plugin-transform-runtime": "^7.19.6",
     "nodemon": "^2.0.20"
+  },
+  {
+    "engines": {
+      "node": "18.x"
+    }
   }
 }
