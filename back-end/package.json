@@ -27,9 +27,7 @@
     "@babel/plugin-transform-runtime": "^7.19.6",
     "nodemon": "^2.0.20"
   },
-  {
-    "engines": {
-      "node": "18.x"
-    }
+  "engines": {
+    "node": "18.x"
   }
-}
+} 
